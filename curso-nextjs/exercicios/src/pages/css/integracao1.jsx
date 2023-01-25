@@ -1,4 +1,4 @@
-import './integracao1.css'
+//import './integracao1.css'
 
 export default function integracao() {
     return (
