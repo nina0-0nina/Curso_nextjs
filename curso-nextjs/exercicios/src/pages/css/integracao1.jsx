@@ -2,7 +2,7 @@
 
 export default function integracao() {
     return (
-        <>
+        <div className="integracao1">
 
             <div className="vermelha">
                 Texto #1
@@ -18,6 +18,6 @@ export default function integracao() {
                 Texto #3
             </div>
 
-        </>
+        </div>
     )
 }
