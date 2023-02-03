@@ -13,6 +13,7 @@ export default function Botao(){
 
     return(
         <div>
+
             <button onClick={acao1}>Click #1</button>
 
             <button onClick={acao2}>Click #2</button>
