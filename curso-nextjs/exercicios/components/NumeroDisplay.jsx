@@ -1,4 +1,4 @@
-export default function ContadorDisplay(props){
+export default function NumeroDisplay(props){
     return(
         <div style = {{
             display: 'flex',
@@ -12,7 +12,7 @@ export default function ContadorDisplay(props){
             fontSize: '2rem',
             margin: '20px'
         }}>
-            {props.num}
+            {props.numero}
         </div>
     )
 }
