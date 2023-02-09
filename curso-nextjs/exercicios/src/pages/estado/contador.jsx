@@ -1,17 +1,12 @@
 import { useState } from "react"
-import NumeroDisplay from "../../../components/NumeroDisplay"
+import ContadorDisplay from "../../../components/ContadorDisplay"
 
 export default function Contador(){
 
-    const [num, setNum] = useState(0)
+    const [numero, setNumero] = useState(0)
 
-    function aumentarValor(){
-        setNum(num + 1)
-    }
-
-    function reduzirValor(){
-        setNum(num - 1)
-    }
+    const inc = () => setNumero(numero + 1)
+    const dec = () =>setNumero(numero - 1)
 
     return(
         <div style = {{
@@ -21,11 +16,11 @@ export default function Contador(){
             alignItems: 'center'
         }}>
            <h1>Contador</h1>
-           <NumeroDisplay num = {num}/>
-            <h2>Valor: {num}</h2> 
+           <ContadorDisplay numero = {numero}/>
+            <h2>Valor: {numero}</h2> 
             <div>
-                <button onClick={aumentarValor}>+ 1</button>
-                <button onClick={reduzirValor}>- 1</button>
+                <button onClick={dec}>- 1</button>
+                <button onClick={inc}>+ 1</button>
             </div>
         </div>
     )

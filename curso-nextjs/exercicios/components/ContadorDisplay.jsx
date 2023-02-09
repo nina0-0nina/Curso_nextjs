@@ -1,4 +1,4 @@
-export default function NumeroDisplay(props){
+export default function ContadorDisplay(props){
     return(
         <div style = {{
             display: 'flex',
