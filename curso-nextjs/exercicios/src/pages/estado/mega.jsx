@@ -20,7 +20,11 @@ export default function Megasena(){
 
         }}>
             <h1>Mega Sena</h1>
-            <div style={{display: 'flex'}}>
+            <div style={{
+                display: 'flex',
+                justifyContent: 'center',
+                flexWrap: 'wrap'
+        }}>
                 {renderNumeros()}
             </div>
             <div>

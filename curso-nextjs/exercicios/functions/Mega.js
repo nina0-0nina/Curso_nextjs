@@ -1,5 +1,5 @@
-export function Mega(qtde = 6, numeros = []){
-    qtde = +qtde
+export function Mega(quantidade = 6, numeros = []){
+    let qtde = +quantidade
     if(qtde < 6 && qtde > 60) {
         throw 'Quantidade inválida!'
     }
