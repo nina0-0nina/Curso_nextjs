@@ -5,4 +5,11 @@ const nextConfig = {
   },
 }
 
-module.exports = nextConfig
+module.exports = {
+  nextConfig
+  //,
+  // env: {
+  //   //{process.env.bd.path} <- como acesar a variável global
+  //   bdPath :'mysql.....'
+  // }
+}
