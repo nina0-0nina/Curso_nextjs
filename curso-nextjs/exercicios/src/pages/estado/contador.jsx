@@ -19,8 +19,8 @@ export default function Contador(){
            <ContadorDisplay numero = {numero}/>
             <h2>Valor: {numero}</h2> 
             <div>
-                <button onClick={dec}>- 1</button>
-                <button onClick={inc}>+ 1</button>
+                <button onClick={this.dec}>- 1</button>
+                <button onClick={this.inc}>+ 1</button>
             </div>
         </div>
     )

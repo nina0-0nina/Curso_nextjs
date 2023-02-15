@@ -6,8 +6,7 @@ export default class ContadorPage extends Component {
     render(){
         return(
             <>
-                <Contador valorInicial={100}/>
-                <Contador/>
+                <Contador valorInicial={100} passo={10}/>
             </>
             
         )
