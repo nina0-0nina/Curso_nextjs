@@ -4,7 +4,7 @@ export default function Form(){
 
     const [nome, setNome] = useState("")
     const [idade, setIdade] = useState(0)
-    const [usuarios, setUsuarios] = useState(0)
+    const [usuarios, setUsuarios] = useState([])
 
     async function salvarUsuario() {
         await fetch('api/form', {
@@ -12,14 +12,23 @@ export default function Form(){
             body: JSON.stringify({ nome, idade })
         })
 
+        setNome("")
+        setIdade(0)
+
         const resp = await fetch('/api/form')
         const usuarios = await resp.json()
         setUsuarios(usuarios)
     }
 
+    function renderizarUsuarios(){
+        return usuarios.map((usuario, i) => {
+            return <li key = {i}>{usuario.nome} tem {usuario.idade} anos</li>
+        })
+    }
+
     return(
         <div>
-            <h1>Integrandp com API #2</h1>
+            <h1>Integrando com API #2</h1>
             <input type="text" value={nome} 
                 onChange={e => setNome(e.target.value)}/>
             <input type="number" value={idade}
