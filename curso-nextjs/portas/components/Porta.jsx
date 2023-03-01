@@ -1,10 +1,12 @@
 import styles from "../src/styles/Porta.module.css"
 
 export default function Porta(props) {
+    const selecionada = props.selecionada ? styles.selecionada : ''
+
     return(
         <div className={styles.area}>
 
-            <div className={styles.estrutura}>
+            <div className={`${styles.estrutura} ${selecionada}`}>
 
                 <div className={styles.porta}>
 
