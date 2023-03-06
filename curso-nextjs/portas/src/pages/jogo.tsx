@@ -3,6 +3,7 @@ import { useState } from "react"
 import Porta from "components/Porta"
 import criarPortas from "functions/portas"
 import { atualizarPortas } from "functions/portas"
+import Link from "next/link"
 
 
 export default function Jogo() {
@@ -23,7 +24,9 @@ export default function Jogo() {
             </div>
 
             <div className={styles.botoes}>
-
+                <Link href="/">
+                    <button>Reiniciar Jogo</button>
+                </Link>
             </div>
         </div>
     )
