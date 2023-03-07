@@ -2,8 +2,12 @@
 import styles from "../styles/Formulario.module.css";
 import Cartao from "components/Cartao";
 import Link from "next/link";
+import EntradaNumerica from "components/EntradaNumerica";
+import { useState } from "react";
 
 export default function Formulario() {
+
+  const [qtdePortas, setQtdePortas] = useState(3)
 
   return (
     <div className={styles.formulario}>
@@ -11,7 +15,12 @@ export default function Formulario() {
         <Cartao bgcolor="#c0392c">
           <h1>Monty Hall</h1>
         </Cartao>
-        <Cartao></Cartao>
+        <Cartao>
+          <EntradaNumerica 
+            text='Qtde Portas' 
+            value={qtdePortas} 
+            onChange={novaQtde => setQtdePortas(novaQtde)}/>
+        </Cartao>
       </div>
 
       <div>
