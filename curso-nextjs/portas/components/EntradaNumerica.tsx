@@ -2,7 +2,7 @@
 import styles from "../src/styles/EntradaNumerica.module.css"
 
 // o interface é usado para definir tipos específicos, dessa forma, foi criado um objeto EntradaNumerica que possui 3 propriedades: text
-// do tipo string, value é do tipo number e onChange que é uma arrow functionque recebe um novo value (tipo number) e não retorna nada
+// do tipo string, value é do tipo number e onChange que é uma arrow function que recebe um novo value (tipo number) e não retorna nada
 interface EntradaNumerica {
     text: string
     value: number
