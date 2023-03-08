@@ -1,7 +1,9 @@
+//import
 import styles from "../src/styles/Presente.module.css"
 
+//design do presente
 export default function Presente() {
-    return(
+    return (
         <div className={styles.presente}>
 
             <div className={styles.tampa}></div>
