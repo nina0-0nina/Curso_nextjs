@@ -8,10 +8,10 @@ interface CartaoProps {
     children?: any
 }
 
-//a função é criada mandando o objeto criado anteriormente como parâmetro
+//a função é criada mandando o objeto criado anteriormente como parâmetro, chamando-o de props
 export default function Cartao(props: CartaoProps) {
     return (
-        //criando uma div é estilizada pelo styles cartao
+        //criando uma div q é estilizada pelo styles cartao
         //e é adicionado um style condicional, onde o bgcolor é mandado pelo children e caso não seja mandado é usado a cor branca.
         //backgroundcolor vai ser = a props.bgcolor, senão for enviado (??) é usado o '#fff'
         <div className={styles.cartao}
