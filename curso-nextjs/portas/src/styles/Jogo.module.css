@@ -1,28 +1,45 @@
 #jogo {
+    /* Essa propriedade seta o tipo de display do elemento para flex, o que facilmente permite que o elemento seja posicionado e alinhado com seu container*/
     display: flex;
+    /* Essa propriedade seta a direção da axis main do flex container para ser vertical, significando  que o itens flex serão dispostos em coluna */
     flex-direction: column;
+    /* Essa propriedade alinha o conteúdo do elemento horizontalmente para o centro */
     justify-content: center;
+    /* Essa propriedade alinha o conteúdo do elemento verticalmente para o centro */
     align-items: center;
+    /* Essa propriedade seta a altura do elemento para 100vh */
     height: 100vh;
 }
 
 .portas {
+    /* Essa propriedade seta o tipo de display do elemento para flex, o que facilmente permite que o elemento seja posicionado e alinhado com seu container*/
     display: flex;
+    /* Essa propriedade alinha o elemnto ao longo do cross-axis(perpendicular da main-axis) e seta o tamanho para esticar sua altura para o do conatiner */
     align-self: stretch;
+    /* Essa propriedade alinha o elemento child ao long da main axis( axis horizontal, desde que essa é direção de linha ) e destribui o espaço que sobrou no meio dos elementos com espaçamento igual */
     justify-content: space-around;
+    /* Essa propriedade permite que o elemento quebre para a próxima linha quando o espaço necessario excede a largura do container */
     flex-wrap: wrap;
 }
 
 .botoes {
+    /* Essa propriedade seta o tipo de display do elemento para flex, o que facilmente permite que o elemento seja posicionado e alinhado com seu container*/
     display: flex;
+    /* Essa propriedade alinha o conteúdo do elemento horizontalmente para o centro */
     justify-content: center;
+    /* Essa propriedade seta a margem (espaço entre a borda e os elementos adjuntos) do elemnto para 40 px no topo */
     margin-top: 40px;
 }
 
 .botoes button {
+    /* Essa propriedade seta a cor de fundo do elemento para #c0392c */
     background-color: #c0392c;
+    /* Essa propriedade seta a cor do texto do elemnto para #fff */
     color: #fff;
+    /* Essa propriedade seta o tamanho da fonte do elento para 2 rems ( relativo ao tamanho da fonte do elemnto pai) */
     font-size: 2rem;
+    /* Essa propriedade seta a margem do elemnto para none, significando que não terá nehuma borda visível */
     border: none;
+    /* Essa propriedade seta o padding( espaço entre o conteúdo e a borda) do elemento para 10 px em cima e em baixo e 25px para esquerda e direita */
     padding: 10px 25px;
 }
