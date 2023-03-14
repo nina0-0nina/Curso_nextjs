@@ -1,64 +1,104 @@
 .area {
+    /* The position property is set to "relative", which means that the element's position will be relative to its normal position. */
     position: relative;
+    /* Essa propriedade seta o tipo de display do elemento para flex, o que facilmente permite que o elemento seja posicionado e alinhado com seu container*/
     display: flex;
+    /* Essa propriedade seta a direção da axis main do flex container para ser vertical, significando  que o itens flex serão dispostos em coluna */
     flex-direction: column;
+    /* Essa propriedade alinha o conteúdo do elemento verticalmente para o centro */
     align-items: center;
+    /* Essa propriedade seta a largura do elemento para a variável area-porta-largura*/
     width: var(--area-porta-largura);
+    /* Essa propriedade seta a altura do elemento para a variável area-porta-altura*/
     height: var(--area-porta-altura);
+    /* Essa propriedade seta a margem (espaço entre a borda e os elementos adjuntos) do elemnto para 5 px em todos os lados */
     margin: 5px;
 }
 
 .estrutura {
+    /* Essa propriedade seta o tipo de display do elemento para flex, o que facilmente permite que o elemento seja posicionado e alinhado com seu container*/
     display: flex;
+    /* This sets the main axis of the flex container to be vertical and in reverse order, meaning that the child elements will be displayed from bottom to top. */
     flex-direction: column-reverse;
+    /* This sets the flex grow factor to 1, which means that this element will expand to fill all available space. */
     flex-grow: 1;
+    /* This sets the left border of the element to be a solid brown line with a width of 5 pixels. */
     border-left: 5px solid brown;
+    /* This sets the top border of the element to be a solid brown line with a width of 5 pixels. */
     border-top: 5px solid brown;
+    /* This sets the right border of the element to be a solid brown line with a width of 5 pixels. */
     border-right: 5px solid brown;
+    /* Essa propriedade seta a cor de fundo do elemento para #0005 */
     background-color: #0005;
+    /* This sets the width of the element to be 90% of the width of its containing element. */
     width: 90%;
 }
 
 .porta {
+    /* Essa propriedade seta o tipo de display do elemento para flex, o que facilmente permite que o elemento seja posicionado e alinhado com seu container*/
     display: flex;
+    /* Essa propriedade seta a direção da axis main do flex container para ser vertical, significando  que o itens flex serão dispostos em coluna */
     flex-direction: column;
+    /* Essa propriedade alinha o conteúdo do elemento verticalmente para o centro */
     align-items: center;
+    /* sets the flex-grow property to 1, which means that the element will grow to fill any available space in its container. */
     flex-grow: 1;
+    /* Essa propriedade seta a cor de fundo do elemento para chocolate */
     background-color: chocolate;
+    /* Essa propriedade seta o padding( espaço entre o conteúdo e a borda) do elemento para 15 px para todos os lados*/
     padding: 15px;
 }
 
 .numero {
+    /* Essa propriedade seta o tamanho da fonte do elento para 3 rems ( relativo ao tamanho da fonte do elemnto pai) */
     font-size: 3rem;
 }
 
 .macaneta {
+    /* This positions the element absolutely with respect to its nearest positioned ancestor 
+    (i.e., an ancestor that has position: relative, position: absolute, or position: fixed). 
+    This allows the element to be positioned independently of the normal flow of the document. */
     position: absolute;
+    /* This aligns the element along the cross-axis of its flex container to the start (top, in this case). */
     align-self: flex-start;
+    /* This sets the distance from the top of the element to the top of its nearest positioned ancestor 
+    (which is likely the door) to be 45% of the height of the door (as defined by a CSS custom property --area-porta-altura). */
     top: calc(0.45 * var(--area-porta-altura));
+    /* This sets the height of the doorknob to be 20 pixels. */
     height: 20px;
+    /* This sets the width of the doorknob to be 20 pixels. */
     width: 20px;
+    /* This rounds the corners of the doorknob by setting the border radius to 10 pixels. */
     border-radius: 10px;
+    /* This sets the background color of the doorknob to brown. */
     background-color: brown;
 
 }
 
 .chao {
+    /* Essa propriedade seta a altura do elemento para 10 px*/
     height: 10px;
+    /* This sets the width of the element to be 100% of the width of its containing element. */
     width: 100%;
+    /* Essa propriedade seta a cor de fundo do elemento para #ddd */
     background-color: #ddd;
 }
 
 .selecionada {
+    /* This sets the left border of the element to be a solid yellow line with a width of 5 pixels. */
     border-left: 5px solid yellow;
+    /* This sets the top border of the element to be a solid yellow line with a width of 5 pixels. */
     border-top: 5px solid yellow;
+    /* This sets the right border of the element to be a solid yellow line with a width of 5 pixels. */
     border-right: 5px solid yellow;
 }
 
 .selecionada .numero {
+    /* Essa propriedade seta a cor do texto do elemnto para yellow */
     color: yellow;
 }
 
 .selecionada .macaneta {
+    /* Essa propriedade seta a cor de fundo do elemento para yellow */
     background-color: yellow;
 }
