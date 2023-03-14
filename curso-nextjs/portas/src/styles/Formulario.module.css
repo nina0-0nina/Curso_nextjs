@@ -1,21 +1,33 @@
 .formulario {
+    /* Essa propriedade seta o tipo de display do elemento para flex, o que facilmente permite que o elemento seja posicionado e alinhado com seu container*/
     display: flex;
+    /* Essa propriedade seta a direção da axis main do flex container para ser vertical, significando  que o itens flex serão dispostos em coluna */
     flex-direction: column;
+    /* Essa propriedade alinha o conteúdo do elemento horizontalmente para o centro */
     justify-content: center;
+    /* Essa propriedade alinha o conteúdo do elemento verticalmente para o centro */
     align-items: center;
+    /* Essa propriedade seta a altura do elemento para 100vh */
     height: 100vh;
 }
 
-.formulario > div {
+.formulario>div {
+    /* Essa propriedade seta o tipo de display do elemento para flex, o que facilmente permite que o elemento seja posicionado e alinhado com seu container*/
     display: flex;
 }
 
 .link {
+    /* Essa propriedade seta o tipo de display do elemento para flex, o que facilmente permite que o elemento seja posicionado e alinhado com seu container*/
     display: flex;
+    /* Esssa propriedade seta as propriedades do flex-grow, flex-shrink, e flex-basis dos elemntos de uma vez só. Nesse caso, seta o elemnto para pegar o máximo de espaço possível em seu container */
     flex: 1;
+    /* Essa propriedade alinha o conteúdo do elemento horizontalmente para o centro */
     justify-content: center;
+    /* Essa propriedade alinha o conteúdo do elemento verticalmente para o centro */
     align-items: center;
-    
+
+    /* Essa propriedade seta a margem (espaço entre a borda e os elementos adjuntos) do elemnto para 5 px em todos os lados */
     margin: 0;
+    /* Essa propriedade seta o estilo do cursor para pointer quanndo o mouse estiver em cima do elemnto, indicando que é clicavel  */
     cursor: pointer;
 }
