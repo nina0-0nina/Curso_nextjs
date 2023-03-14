@@ -1,33 +1,56 @@
 .presente {
+    /* The position property is set to "relative", which means that the element's position will be relative to its normal position. */
     position: relative;
+    /* Essa propriedade seta o tipo de display do elemento para flex, o que facilmente permite que o elemento seja posicionado e alinhado com seu container*/
     display: flex;
+    /* Essa propriedade seta a direção da axis main do flex container para ser vertical, significando  que o itens flex serão dispostos em coluna */
     flex-direction: column;
+    /* Essa propriedade alinha o conteúdo do elemento verticalmente para o centro */
     align-items: center;
 }
 
 .tampa {
+    /* Essa propriedade seta a largura do elemento para 100px*/
     width: 100px;
+    /* Essa propriedade seta a altura do elemento para 25px*/
     height: 25px;
+    /* Essa propriedade seta a cor de fundo do elemento para #7aa944 */
     background-color: #7aa944;
 }
 
 .corpo {
+    /* Essa propriedade seta a largura do elemento para 90px*/
     width: 90px;
+    /* Essa propriedade seta a altura do elemento para 60px*/
     height: 60px;
+    /* Essa propriedade seta a cor de fundo do elemento para #5c7e32 */
     background-color: #5c7e32;
 }
 
 .laco1 {
+    /* This positions the element absolutely with respect to its nearest positioned ancestor 
+    (i.e., an ancestor that has position: relative, position: absolute, or position: fixed). 
+    This allows the element to be positioned independently of the normal flow of the document. */
     position: absolute;
+    /* Essa propriedade seta a largura do elemento para 15px*/
     width: 15px;
+    /* Essa propriedade seta a altura do elemento para 85px*/
     height: 85px;
+    /* Essa propriedade seta a cor de fundo do elemento para red */
     background-color: red;
 }
 
 .laco2 {
+    /* This positions the element absolutely with respect to its nearest positioned ancestor 
+    (i.e., an ancestor that has position: relative, position: absolute, or position: fixed). 
+    This allows the element to be positioned independently of the normal flow of the document. */
     position: absolute;
+    /* sets the distance of the top edge of the element from the top edge of its positioned ancestor to be 40 pixels */
     top: 40px;
+    /* Essa propriedade seta a largura do elemento para 90px*/
     width: 90px;
+    /* Essa propriedade seta a largura do elemento para 15px*/
     height: 15px;
+    /* Essa propriedade seta a cor de fundo do elemento para red */
     background-color: red;
 }
