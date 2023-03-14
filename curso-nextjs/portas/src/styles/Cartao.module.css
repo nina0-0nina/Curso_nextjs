@@ -1,13 +1,23 @@
 .cartao {
-    display: flex;
+
+    /* Essa propriedade seta o tipo de display do elemento para flex, o que facilmente permite que o elemento seja posicionado e alinhado com seu container*/
+    display: flex; 
+    /* Essa propriedade seta a largura do elemento para 300px */
     width: 300px;
+    /* Essa propriedade seta a altura do elemento para 300px */
     height: 300px;
+    /* Essa propriedade seta a cor do texto do elemnto para #fff */
     color: #fff;
+    /* Essa propriedade seta o tamanho da fonte do elento para 2 rems ( relativo ao tamanho da fonte do elemnto pai) */
     font-size: 2rem;
+    /* Essa propriedade seta o padding( espaço entre o conteúdo e a borda) do elemento para 20 px em todos os lados */
     padding: 20px;
+    /* Essa propriedade seta a margem (espaço entre a borda e os elementos adjuntos) do elemnto para 3 px em todos os lados */
     margin: 3px;
 
+    /* Essa propriedade alinha o conteúdo do elemento horizontalmente para o centro */
     justify-content: center;
+    /* Essa propriedade alinha o cgitonteúdo do elemento verticalmente para o centro */
     align-items: center;
 
 }
