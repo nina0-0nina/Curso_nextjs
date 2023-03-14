@@ -1,32 +1,50 @@
 .entradaNumerica {
+    /* Essa propriedade seta o tipo de display do elemento para flex, o que facilmente permite que o elemento seja posicionado e alinhado com seu container*/
     display: flex;
+    /* Esssa propriedade seta as propriedades do flex-grow, flex-shrink, e flex-basis dos elemntos de uma vez só. Nesse caso, seta o elemnto para pegar o máximo de espaço possível em seu container */
     flex: 1;
+    /* Essa propriedade seta a direção da axis main do flex container para ser vertical, significando  que o itens flex serão dispostos em coluna */
     flex-direction: column;
+    /* Essa propriedade alinha o conteúdo do elemento verticalmente para o centro */
     align-items: center;
+    /* Essa propriedade alinha o conteúdo do elemento horizontalmente para o centro */
     justify-content: center;
+    /* Essa propriedade seta a cor do texto do elemnto para #000 */
     color: #000;
 }
 
 .text {
+    /* Essa propriedade seta a cor do texto do elemnto para #555 */
     color: #555;
+    /* Essa propriedade seta o tamanho da fonte do elento para 1.5 rems ( relativo ao tamanho da fonte do elemnto pai) */
     font-size: 1.5rem;
 }
 
 .value {
+    /* Essa propriedade seta o tamanho da fonte do elento para 6 rems ( relativo ao tamanho da fonte do elemnto pai) */
     font-size: 6rem;
 }
 
 .botoes {
+    /* Essa propriedade seta o tipo de display do elemento para flex, o que facilmente permite que o elemento seja posicionado e alinhado com seu container*/
     display: flex;
 }
 
 .btn {
+    /* Essa propriedade seta o tipo de display do elemento para flex, o que facilmente permite que o elemento seja posicionado e alinhado com seu container*/
     display: flex;
+    /* Essa propriedade alinha o conteúdo do elemento horizontalmente para o centro */
     justify-content: center;
+    /* Essa propriedade alinha o conteúdo do elemento verticalmente para o centro */
     align-items: center;
+    /* Essa propriedade seta o tamanho da fonte do elento para 3 rems ( relativo ao tamanho da fonte do elemnto pai) */
     font-size: 3rem;
+    /* Essa propriedade seta a altura do elemento para 80px */
     height: 80px;
+    /* Essa propriedade seta a largura do elemento para 80px */
     width: 80px;
+    /* Essa propriedade seta a margem (espaço entre a borda e os elementos adjuntos) do elemnto para 5 px em todos os lados */
     margin: 5px;
+    /* Essa propriedade seta a margem do elemnto para none, significando que não terá nehuma borda visível */
     border: none;
 }

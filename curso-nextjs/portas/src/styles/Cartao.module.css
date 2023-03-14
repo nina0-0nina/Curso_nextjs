@@ -1,7 +1,7 @@
 .cartao {
 
     /* Essa propriedade seta o tipo de display do elemento para flex, o que facilmente permite que o elemento seja posicionado e alinhado com seu container*/
-    display: flex; 
+    display: flex;
     /* Essa propriedade seta a largura do elemento para 300px */
     width: 300px;
     /* Essa propriedade seta a altura do elemento para 300px */
@@ -17,7 +17,7 @@
 
     /* Essa propriedade alinha o conteúdo do elemento horizontalmente para o centro */
     justify-content: center;
-    /* Essa propriedade alinha o cgitonteúdo do elemento verticalmente para o centro */
+    /* Essa propriedade alinha o conteúdo do elemento verticalmente para o centro */
     align-items: center;
 
 }
